@@ -81,10 +81,7 @@ const [counter,setCounter]= useState(0)
             <div className="card-body">
               <h5 className="card-title">Rs. {p.price}</h5>
               <h5 className="card-title">{p.title}</h5>
-              <p className="card-text">
-                This is a longer card with supporting text below as a natural lead-in
-                to additional content. This content is a little bit longer.
-              </p>
+             
               <h3>Total bill= {totals[index]}</h3>
               <button
                 onClick={() => inc(index)}
