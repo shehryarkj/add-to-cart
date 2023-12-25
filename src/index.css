@@ -3,7 +3,7 @@
   width: 900px;
   height: 1200px;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 50% 50;
   grid-template-rows: 50% 60%;
   gap: 10px;
   margin-left: 200px;
