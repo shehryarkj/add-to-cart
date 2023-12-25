@@ -2,17 +2,11 @@
   /* border: solid; */
   width: 900px;
   height: 1200px;
-  display: grid;
-  grid-template-columns: 50% 50;
-  grid-template-rows: 50% 60%;
-  gap: 10px;
+
   margin-left: 200px;
 }
 #d1{
-  /* border: solid; */
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  gap: 50px;
+
 }
 .btn1{
   width: 150px;
@@ -26,6 +20,7 @@
   font-size: 20px;
   transition-duration: 0.3s;
 }
+
 .btn1:hover{
   background-color: white;
   border: solid;
