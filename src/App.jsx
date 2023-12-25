@@ -71,16 +71,20 @@ const [counter,setCounter]= useState(0)
   }
 
   return (
+    <>
+    <div className="d2"> <h3>Items: {counter} / Total bill : {totals.reduce((a, b) => a + b, 0)}</h3>  </div>    
     <div id='d1'>
-  
-      {products.map((p, index) => (
-        <div className="col" >
+    {products.map((p, index) => (
+      <div className="col" >
           <div className="card h-100">
             <img src={p.src} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">Rs. {p.price}</h5>
               <h5 className="card-title">{p.title}</h5>
-            
+              <p className="card-text">
+                This is a longer card with supporting text below as a natural lead-in
+                to additional content. This content is a little bit longer.
+              </p>
               <h3>Total bill= {totals[index]}</h3>
               <button
                 onClick={() => inc(index)}
@@ -94,6 +98,7 @@ const [counter,setCounter]= useState(0)
         </div>
       ))}
     </div>
+          </>
   );
 }
 
